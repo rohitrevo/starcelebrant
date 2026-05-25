@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Star Celebrant Sydney</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.page-header{background:var(--warm-white);padding:80px 0;border-bottom:1px solid var(--border);text-align:center;}
+.gallery-intro{background:var(--cream);padding:64px 0;}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);}
+.gallery-item{background:var(--blush);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;position:relative;overflow:hidden;cursor:pointer;transition:opacity .2s;}
+.gallery-item:hover{opacity:.9;}
+.gallery-item.tall{aspect-ratio:3/4;grid-row:span 2;}
+.gallery-item.wide{grid-column:span 2;}
+.gallery-item::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 18px,rgba(255,255,255,.1) 18px,rgba(255,255,255,.1) 19px);}
+.gallery-item p{font-size:12px;color:var(--mid);z-index:1;letter-spacing:.06em;}
+.gallery-label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(44,31,26,.6));padding:24px 20px 16px;z-index:2;}
+.gallery-label span{font-size:12px;color:rgba(255,255,255,.9);letter-spacing:.08em;}
+.gi-1{background:var(--blush);}
+.gi-2{background:#D4C4B8;}
+.gi-3{background:#C8B8A8;}
+.gi-4{background:#E0CFC4;}
+.gi-5{background:var(--blush-light);}
+.gi-6{background:#CBBDAE;}
+.gi-7{background:#D8C8B8;}
+.gi-8{background:var(--blush);}
+.gi-9{background:#C4B4A4;}
+.quote-break{background:var(--section-alt);padding:64px 0;text-align:center;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(max-width:860px){.gallery-grid{grid-template-columns:1fr 1fr;}.gallery-item.tall{aspect-ratio:4/3;grid-row:span 1;}.gallery-item.wide{grid-column:span 1;}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-brand">Star <span>Celebrant</span></a>
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html" class="active">Gallery</a></li>
+    <li><a href="multicultural.html">Multicultural</a></li>
+    <li><a href="contact.html" class="nav-cta">Enquire</a></li>
+  </ul>
+</nav>
+<main>
+<section class="page-header">
+  <div class="container">
+    <span class="eyebrow">Gallery</span>
+    <h1>Moments we've <em>had the honour</em> of witnessing</h1>
+    <p style="max-width:500px;margin:16px auto 0;">Every photo tells the story of two people choosing each other. Add your real ceremony photos here to bring this gallery to life.</p>
+  </div>
+</section>
+
+<section class="gallery-intro">
+  <div class="container-wide">
+    <div class="gallery-grid">
+      <div class="gallery-item tall gi-1"><p>Ceremony photo</p><div class="gallery-label"><span>Harbourside Wedding · Sydney CBD</span></div></div>
+      <div class="gallery-item gi-2"><p>Ceremony photo</p><div class="gallery-label"><span>Indian-Australian Ceremony</span></div></div>
+      <div class="gallery-item gi-3"><p>Ceremony photo</p><div class="gallery-label"><span>Intimate Garden Elopement</span></div></div>
+      <div class="gallery-item wide gi-4"><p>Ceremony photo</p><div class="gallery-label"><span>Lebanese-Greek Wedding · Balmain</span></div></div>
+      <div class="gallery-item gi-5"><p>Ceremony photo</p><div class="gallery-label"><span>Micro-Wedding · Northern Beaches</span></div></div>
+      <div class="gallery-item gi-6"><p>Ceremony photo</p><div class="gallery-label"><span>Chinese-Australian Tea Ceremony</span></div></div>
+      <div class="gallery-item gi-7"><p>Ceremony photo</p><div class="gallery-label"><span>Vow Renewal · Blue Mountains</span></div></div>
+      <div class="gallery-item tall gi-8"><p>Ceremony photo</p><div class="gallery-label"><span>Filipino-Western Wedding</span></div></div>
+      <div class="gallery-item gi-9"><p>Ceremony photo</p><div class="gallery-label"><span>Sunset Elopement · Bondi</span></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="quote-break">
+  <div class="container">
+    <span class="section-label" style="text-align:center;display:block;margin-bottom:16px;">A Note on Photos</span>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:300;font-style:italic;color:var(--deep);max-width:600px;margin:0 auto 20px;">Replace the placeholders above with your real ceremony photography — each image tells a story only you can tell.</p>
+    <p style="font-size:14px;color:var(--muted);">Upload your photos to your Netlify folder and update the image src paths in gallery.html</p>
+  </div>
+</div>
+
+<div style="background:var(--terracotta);padding:72px 48px;text-align:center;">
+  <div class="container">
+    <h2 style="color:var(--cream);margin-bottom:16px;">Want your ceremony to look like this?</h2>
+    <p style="color:rgba(255,255,255,.8);max-width:460px;margin:0 auto 36px;">Let's start planning something beautiful together.</p>
+    <a href="contact.html" style="background:var(--cream);color:var(--deep);text-decoration:none;font-family:'Jost',sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;padding:16px 36px;display:inline-block;">Get in Touch</a>
+  </div>
+</div>
+</main>
+<footer>
+  <div class="footer-grid">
+    <div><span class="footer-brand">Star <span>Celebrant</span></span><p class="footer-desc">Sydney's multicultural and intimate wedding celebrant.</p></div>
+    <div class="footer-col"><h4>Pages</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="multicultural.html">Multicultural</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h4>Services</h4><a href="services.html">Wedding Ceremonies</a><a href="services.html">Multicultural</a><a href="services.html">Elopements</a></div>
+    <div class="footer-col"><h4>Contact</h4><p>Sydney, NSW</p><a href="mailto:hello@starcelebrant.com">hello@starcelebrant.com</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Star Celebrant.</span><span>Sydney Marriage Celebrant</span></div>
+</footer>
+</body></html>

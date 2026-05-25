@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multicultural Weddings Sydney — Star Celebrant</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.mc-hero{min-height:72vh;display:grid;grid-template-columns:1fr 1fr;padding:0!important;}
+.mc-hero-left{background:var(--warm-white);padding:100px 64px 80px 72px;display:flex;flex-direction:column;justify-content:center;}
+.mc-hero-right{background:var(--blush);position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:48px;}
+.mc-pattern{position:absolute;inset:0;opacity:.07;background-image:repeating-linear-gradient(45deg,var(--deep) 0,var(--deep) 1px,transparent 0,transparent 50%);background-size:28px 28px;}
+.mc-stat{position:relative;z-index:1;background:var(--warm-white);padding:28px 32px;width:100%;}
+.mc-stat .num{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:var(--terracotta);line-height:1;display:block;}
+.pillars{border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);}
+.pillar{padding:52px 40px;border-right:1px solid var(--border);}
+.pillar:last-child{border-right:none;}
+.pillar-num{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:300;color:var(--blush);line-height:1;margin-bottom:20px;display:block;}
+.traditions-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border);margin-top:56px;}
+.tradition{background:var(--cream);padding:48px;position:relative;}
+.tradition::before{content:'';position:absolute;top:48px;left:48px;width:24px;height:2px;background:var(--terracotta);}
+.tradition h3{font-size:22px;padding-top:20px;margin-bottom:12px;}
+.tradition p{font-size:15px;line-height:1.7;}
+.why-grid{display:grid;grid-template-columns:3fr 2fr;gap:96px;align-items:center;}
+.stat-sidebar{border-left:1px solid var(--border);padding-left:56px;}
+.sstat{margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border);}
+.sstat:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none;}
+.sstat .n{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:var(--terracotta);line-height:1;display:block;margin-bottom:6px;}
+.sstat .d{font-size:13px;color:var(--muted);line-height:1.5;}
+.tip-list{list-style:none;counter-reset:tip;margin-top:40px;}
+.tip-list li{counter-increment:tip;display:grid;grid-template-columns:60px 1fr;gap:24px;padding:32px 0;border-top:1px solid var(--border);color:var(--mid);font-size:16px;align-items:start;}
+.tip-list li:last-child{border-bottom:1px solid var(--border);}
+.tip-list li::before{content:counter(tip,decimal-leading-zero);font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;color:var(--blush);line-height:1;display:block;}
+.tip-list li strong{display:block;font-weight:500;font-size:15px;color:var(--deep);letter-spacing:.04em;margin-bottom:6px;}
+@media(max-width:860px){.mc-hero{grid-template-columns:1fr;}.mc-hero-right{display:none;}.mc-hero-left{padding:60px 24px;}.pillars-grid{grid-template-columns:1fr;}.pillar{border-right:none;border-bottom:1px solid var(--border);}.traditions-grid{grid-template-columns:1fr;}.why-grid{grid-template-columns:1fr;}.stat-sidebar{border-left:none;border-top:1px solid var(--border);padding-left:0;padding-top:40px;}.tip-list li{grid-template-columns:48px 1fr;}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-brand">Star <span>Celebrant</span></a>
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="multicultural.html" class="active">Multicultural</a></li>
+    <li><a href="contact.html" class="nav-cta">Enquire</a></li>
+  </ul>
+</nav>
+<main>
+<section class="mc-hero">
+  <div class="mc-hero-left">
+    <span class="eyebrow">Multicultural Wedding Specialist — Sydney</span>
+    <h1>Where Two<br>Worlds Become<br><em>One Story</em></h1>
+    <p style="font-size:17px;color:var(--mid);line-height:1.8;max-width:420px;margin-bottom:44px;">Sydney is one of the most culturally diverse cities on earth. More couples than ever are celebrating weddings that honour multiple heritages — intimate, meaningful, and beautifully woven together.</p>
+    <div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;">
+      <a href="contact.html" class="btn-primary">Begin Planning</a>
+      <a href="services.html" class="btn-ghost">View Services</a>
+    </div>
+  </div>
+  <div class="mc-hero-right">
+    <div class="mc-pattern"></div>
+    <div class="mc-stat">
+      <span class="num">45%</span>
+      <p style="font-size:13px;color:var(--muted);margin-top:6px;">of Sydney residents were born overseas or have at least one parent born overseas — the highest concentration of any Australian city.</p>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--warm-white);">
+  <div class="container-wide">
+    <div style="display:grid;grid-template-columns:1fr 2fr;gap:80px;align-items:start;">
+      <div><p class="section-label">The Shift</p></div>
+      <div>
+        <h2>Sydney is writing a new kind of <em>wedding story</em></h2>
+        <p>Walk through Surry Hills, Cabramatta, Newtown, or Parramatta on any given Saturday and you'll witness something extraordinary — celebrations that blend the sari with the white gown, the tea ceremony with the first dance, the henna with the veil. Sydney couples are no longer choosing between their cultures. They're celebrating both.</p>
+        <p>This is one of the fastest-growing segments in the Australian wedding market, driven by a generation of Sydneysiders who grew up between two or more worlds, and who want their wedding day to finally, fully reflect all of who they are.</p>
+        <p>As a specialist in multicultural and intimate weddings, I've had the privilege of helping couples navigate what can be the most complex — and most rewarding — planning process of their lives.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="pull-quote">
+  <div class="container-wide">
+    <blockquote>"A beautiful trend we're seeing is the incorporation of cultural traditions by multicultural couples — weddings that honour heritage, tell stories, and create something that feels entirely, unmistakably theirs."<cite>Nicole Amarise, Event Planner &amp; Stylist, 2025</cite></blockquote>
+  </div>
+</div>
+
+<section class="pillars" style="padding:0;">
+  <div class="pillars-grid">
+    <div class="pillar"><span class="pillar-num">01</span><h3>Cultural Harmony</h3><p>Blending two sets of family expectations, traditions, and aesthetics requires patience, creativity, and a specialist who has done it before. I make it seamless.</p></div>
+    <div class="pillar"><span class="pillar-num">02</span><h3>Intimate Scale</h3><p>Multicultural couples often want fewer guests and deeper meaning. Smaller weddings allow for richer rituals, more personal moments, and a celebration that truly reflects the couple.</p></div>
+    <div class="pillar"><span class="pillar-num">03</span><h3>Authentic Story</h3><p>Your wedding shouldn't look like anyone else's. I work to understand exactly who you are — both of you — and design a day that could only ever belong to you.</p></div>
+  </div>
+</section>
+
+<section id="traditions">
+  <div class="container-wide">
+    <p class="section-label">Common Pairings I Celebrate</p>
+    <h2>Every culture brings <em>something irreplaceable</em></h2>
+    <p style="max-width:600px;">Sydney's multicultural couples come from every corner of the world. Here are some of the cultural traditions I most commonly help weave into a single, cohesive celebration.</p>
+    <div class="traditions-grid">
+      <div class="tradition"><h3>Indian &amp; Western</h3><p>The mandap and the aisle. The mehendi evening and the rehearsal dinner. The baraat procession winding toward a harbourside reception. Indian-Western weddings are among Sydney's most joyful and visually spectacular celebrations.</p></div>
+      <div class="tradition"><h3>Chinese &amp; Australian</h3><p>The traditional tea ceremony — a profound act of respect between families — can flow naturally into a contemporary reception. Red envelopes, lucky symbols, and the banquet table exist beautifully alongside the modern Australian celebration.</p></div>
+      <div class="tradition"><h3>Lebanese &amp; European</h3><p>Zaffe processions, zaghareet, and the vibrant warmth of Arabic hospitality alongside European ceremony traditions create weddings of extraordinary energy and heart.</p></div>
+      <div class="tradition"><h3>South-East Asian &amp; Western</h3><p>Filipino, Vietnamese, Thai, and Indonesian traditions carry deep symbolism — from cord ceremonies and candle rituals to ancestral offerings — that blend beautifully with Western ceremony structures.</p></div>
+      <div class="tradition"><h3>Greek Orthodox &amp; Contemporary</h3><p>The crowning, the circling of the altar, the stefana — Greek Orthodox traditions carry centuries of meaning. Incorporating them alongside a contemporary reception creates a celebration of profound continuity.</p></div>
+      <div class="tradition"><h3>Any Combination, Uniquely Yours</h3><p>Jewish &amp; Catholic. Korean &amp; Italian. Sri Lankan &amp; Irish. I don't specialise in categories — I specialise in people. Whatever your backgrounds, I'll create something that honours all of them.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--section-alt);">
+  <div class="container-wide">
+    <div class="why-grid">
+      <div>
+        <p class="section-label">Why Now, Why Sydney</p>
+        <h2>The city that makes this <em>possible</em></h2>
+        <p>Sydney is one of the world's most genuinely multicultural cities. More than a third of its residents were born overseas, and that proportion continues to grow. The 2021 Census showed over 200 languages spoken across Greater Sydney — a diversity that shows up, vibrantly, in its weddings.</p>
+        <p>Multicultural weddings are consistently identified as one of the highest-growth segments in the Australian wedding market. Couples in this category invest more deeply in their celebrations — because the ceremony carries more weight. There are more families to honour, more stories to tell, and a once-in-a-lifetime opportunity to bring two worlds together.</p>
+        <p>Sydney's venues, caterers, and suppliers have evolved to meet this demand. From harbourside spaces that accommodate multiple ceremony structures to kitchens that honour dietary requirements across traditions, the city is increasingly well-equipped for the multicultural couple.</p>
+      </div>
+      <div class="stat-sidebar">
+        <div class="sstat"><span class="n">200+</span><p class="d">Languages spoken across Greater Sydney (ABS Census 2021)</p></div>
+        <div class="sstat"><span class="n">1 in 3</span><p class="d">Sydney residents were born overseas — the highest rate of any Australian city</p></div>
+        <div class="sstat"><span class="n">↑ Fast</span><p class="d">Multicultural and intimate weddings are among the fastest-growing categories in the Sydney market</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <p class="section-label">The Planning Process</p>
+    <h2>Seven things every multicultural couple should know before they <em>begin</em></h2>
+    <ol class="tip-list">
+      <li><div><strong>Start with the families, not the venue</strong>Before you look at a single room, have an honest conversation with both sets of parents about which traditions are non-negotiable. This protects everyone and shapes every decision that follows.</div></li>
+      <li><div><strong>Choose one aesthetic anchor</strong>Two distinct visual traditions can feel harmonious or chaotic. The difference is usually one clear aesthetic anchor — a colour palette, a motif, a floral direction — that ties both worlds together with intention.</div></li>
+      <li><div><strong>Budget for two ceremonies or more</strong>Many multicultural couples run two ceremonies in one day. Both need their own logistical planning, vendors, and time buffers. Budget accordingly from the start.</div></li>
+      <li><div><strong>Find vendors who have done this before</strong>A florist who understands the significance of marigolds in an Indian ceremony, or a caterer who knows halal and kosher requirements, is worth finding early. Experience in multicultural weddings is different from experience in weddings generally.</div></li>
+      <li><div><strong>Brief your celebrant thoroughly</strong>Your celebrant is the conductor of your ceremony. They need to understand every ritual, its meaning, its correct sequence, and how to introduce it to guests of different backgrounds. I ask many questions — this is why.</div></li>
+      <li><div><strong>Guide your guests</strong>A beautifully written order of ceremony that explains each ritual creates inclusion rather than confusion — and becomes a cherished keepsake.</div></li>
+      <li><div><strong>Embrace the intimacy</strong>Smaller weddings allow multicultural rituals to breathe. You don't have to rush through the tea ceremony to get to the reception. Give each tradition the time and space it deserves.</div></li>
+    </ol>
+  </div>
+</section>
+
+<div style="background:var(--terracotta);padding:72px 48px;text-align:center;">
+  <div class="container">
+    <span class="eyebrow" style="color:rgba(255,255,255,.7);">Your Story Starts Here</span>
+    <h2 style="color:var(--cream);margin-bottom:16px;">Let's plan something <em style="color:rgba(255,255,255,.75);">extraordinary</em></h2>
+    <p style="color:rgba(255,255,255,.8);max-width:480px;margin:0 auto 36px;">Every multicultural wedding I plan begins with a single conversation — tell me about your backgrounds, your families, and your vision.</p>
+    <a href="contact.html" style="background:var(--cream);color:var(--deep);text-decoration:none;font-family:'Jost',sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;padding:16px 36px;display:inline-block;">Start the Conversation</a>
+  </div>
+</div>
+</main>
+<footer>
+  <div class="footer-grid">
+    <div><span class="footer-brand">Star <span>Celebrant</span></span><p class="footer-desc">Sydney's multicultural and intimate wedding celebrant. Creating ceremonies as unique as the couples at the heart of them.</p></div>
+    <div class="footer-col"><h4>Pages</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="multicultural.html">Multicultural</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h4>Services</h4><a href="services.html">Wedding Ceremonies</a><a href="services.html">Multicultural Weddings</a><a href="services.html">Elopements</a><a href="services.html">Vow Renewals</a></div>
+    <div class="footer-col"><h4>Contact</h4><p>Sydney, NSW</p><a href="mailto:hello@starcelebrant.com">hello@starcelebrant.com</a><a href="contact.html">Make an Enquiry</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Star Celebrant. All rights reserved.</span><span>Sydney Marriage Celebrant</span></div>
+</footer>
+</body></html>

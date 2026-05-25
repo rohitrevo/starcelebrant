@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Star Celebrant — Sydney's Multicultural Wedding Celebrant</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.hero{min-height:92vh;display:grid;grid-template-columns:1fr 1fr;padding:0!important;}
+.hero-left{background:var(--warm-white);padding:100px 64px 80px 72px;display:flex;flex-direction:column;justify-content:center;}
+.hero-right{background:var(--blush);position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:48px;}
+.hero-pattern{position:absolute;inset:0;opacity:.07;background-image:repeating-linear-gradient(45deg,var(--deep) 0,var(--deep) 1px,transparent 0,transparent 50%);background-size:28px 28px;}
+.hero-photo{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;}
+.hero-badge{position:relative;z-index:1;background:var(--warm-white);padding:28px 32px;width:100%;}
+.hero-badge .num{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:var(--terracotta);line-height:1;display:block;}
+.hero-badge p{font-size:13px;color:var(--muted);margin-top:6px;}
+.hero-left h1{margin-bottom:28px;}
+.hero-lead{font-size:17px;color:var(--mid);line-height:1.8;max-width:420px;margin-bottom:44px;}
+.cta-row{display:flex;align-items:center;gap:28px;flex-wrap:wrap;}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.service-card{padding:48px 40px;border-right:1px solid var(--border);transition:background .2s;}
+.service-card:last-child{border-right:none;}
+.service-card:hover{background:var(--warm-white);}
+.service-icon{font-size:28px;margin-bottom:20px;display:block;}
+.service-card a{display:inline-block;margin-top:20px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--terracotta);text-decoration:none;border-bottom:1px solid var(--blush);padding-bottom:2px;}
+.about-preview{background:var(--section-alt);}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.about-img-ph{aspect-ratio:3/4;background:var(--blush);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+.about-img-ph::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 20px,rgba(255,255,255,.15) 20px,rgba(255,255,255,.15) 21px);}
+.about-img-ph p{font-size:13px;color:var(--mid);z-index:1;}
+.testimonials{background:var(--warm-white);}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);margin-top:48px;}
+.tcard{background:var(--cream);padding:40px 36px;}
+.stars{color:var(--terracotta);font-size:14px;letter-spacing:3px;margin-bottom:16px;display:block;}
+.tcard p{font-family:'Cormorant Garamond',serif;font-size:19px;font-style:italic;font-weight:300;color:var(--deep);line-height:1.55;}
+.tcard cite{display:block;margin-top:20px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-style:normal;}
+.cta-strip{background:var(--terracotta);padding:72px 48px;text-align:center;}
+.btn-light{background:var(--cream);color:var(--deep);text-decoration:none;font-family:'Jost',sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;padding:16px 36px;display:inline-block;transition:background .25s,color .25s;}
+.btn-light:hover{background:var(--deep);color:var(--cream);}
+@media(max-width:860px){.hero{grid-template-columns:1fr;}.hero-right{display:none;}.hero-left{padding:60px 24px;}.services-grid{grid-template-columns:1fr;}.service-card{border-right:none;border-bottom:1px solid var(--border);}.about-grid{grid-template-columns:1fr;}.tgrid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-brand">Star <span>Celebrant</span></a>
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="multicultural.html">Multicultural</a></li>
+    <li><a href="contact.html" class="nav-cta">Enquire</a></li>
+  </ul>
+</nav>
+<main>
+<section class="hero">
+  <div class="hero-left">
+    <span class="eyebrow">Sydney Marriage Celebrant</span>
+    <h1>Your Day,<br>Your Way,<br><em>Your Story</em></h1>
+    <p class="hero-lead">Specialising in multicultural and intimate weddings across Sydney. Every ceremony is crafted to honour exactly who you are — both of you.</p>
+    <div class="cta-row">
+      <a href="contact.html" class="btn-primary">Start Planning</a>
+      <a href="services.html" class="btn-ghost">View Services</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-pattern"></div>
+    <div class="hero-photo"><p style="color:var(--mid);font-size:13px;"<img src="https://github.com/rohitrevo/starcelebrant/blob/ee73a87e45186363b230e27ef2a570e2a42364e7/images/StarCelebrantProfile.jpg"></p></div>
+    <div class="hero-badge">
+      <span class="num">200+</span>
+      <p>Ceremonies celebrated across Sydney &amp; surrounds</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding:0;">
+  <div class="services-grid">
+    <div class="service-card"><span class="service-icon">💍</span><h3>Wedding Ceremonies</h3><p>From intimate elopements to grand celebrations, every ceremony is written and delivered just for you.</p><a href="services.html">Learn more →</a></div>
+    <div class="service-card"><span class="service-icon">🌏</span><h3>Multicultural Weddings</h3><p>Blending two cultures, two families, two worlds — with sensitivity, expertise, and genuine joy.</p><a href="multicultural.html">Learn more →</a></div>
+    <div class="service-card"><span class="service-icon">🕊️</span><h3>Intimate Ceremonies</h3><p>Small guest lists, big meaning. Micro-weddings and elopements that feel exactly right.</p><a href="services.html">Learn more →</a></div>
+  </div>
+</section>
+
+<section class="about-preview">
+  <div class="container-wide">
+    <div class="about-grid">
+      <div class="about-img-ph"><p><img src="https://github.com/rohitrevo/starcelebrant/blob/ee73a87e45186363b230e27ef2a570e2a42364e7/images/StarCelebrantProfile.jpg"></p></div>
+
+      <div>
+        <span class="section-label">Meet Your Celebrant</span>
+        <h2>Ceremonies that feel <em>genuinely yours</em></h2>
+        <p>I'm a Sydney-based marriage celebrant with a passion for creating ceremonies that truly reflect the people at the centre of them. Having worked with couples from dozens of cultural backgrounds, I understand that no two love stories are ever the same.</p>
+        <p>My approach is warm, unhurried, and deeply personal. I take the time to get to know you both, so that on your wedding day, every word feels like it was written just for you — because it was.</p>
+        <div class="divider"></div>
+        <a href="about.html" class="btn-primary">My Story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="pull-quote">
+  <div class="container-wide">
+    <blockquote>"The ceremony is the heart of your wedding day. Everything else is the celebration around it."<cite>Star Celebrant — Sydney</cite></blockquote>
+  </div>
+</div>
+
+<section class="testimonials">
+  <div class="container-wide">
+    <span class="section-label">Couples Say</span>
+    <h2>Love stories we've <em>had the honour</em> of telling</h2>
+    <div class="tgrid">
+      <div class="tcard"><span class="stars">★★★★★</span><p>"Our ceremony beautifully wove together my Indian heritage and my husband's Australian background. Guests from both families were moved to tears — in the best way."</p><cite>Priya &amp; James, Parramatta</cite></div>
+      <div class="tcard"><span class="stars">★★★★★</span><p>"We had just 12 guests and wanted something intimate and meaningful. The ceremony felt like it had been written from our hearts. Absolutely perfect."</p><cite>Sophie &amp; Mei, Newtown</cite></div>
+      <div class="tcard"><span class="stars">★★★★★</span><p>"Navigating a Lebanese-Greek wedding with two passionate families could have been stressful. Instead it was the most joyful day of our lives."</p><cite>Leila &amp; Stavros, Balmain</cite></div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-strip">
+  <div class="container">
+    <h2 style="color:var(--cream);margin-bottom:16px;">Ready to start planning?</h2>
+    <p style="color:rgba(255,255,255,.8);max-width:480px;margin:0 auto 36px;">Every great ceremony begins with a conversation. Let's talk about you, your partner, and what you dream your day will feel like.</p>
+    <a href="contact.html" class="btn-light">Get in Touch</a>
+  </div>
+</div>
+</main>
+<footer>
+  <div class="footer-grid">
+    <div><span class="footer-brand">Star <span>Celebrant</span></span><p class="footer-desc">Sydney's multicultural and intimate wedding celebrant. Creating ceremonies as unique as the couples at the heart of them.</p></div>
+    <div class="footer-col"><h4>Pages</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="multicultural.html">Multicultural</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h4>Services</h4><a href="services.html">Wedding Ceremonies</a><a href="services.html">Multicultural Weddings</a><a href="services.html">Elopements</a><a href="services.html">Vow Renewals</a></div>
+    <div class="footer-col"><h4>Contact</h4><p>Sydney, NSW</p><a href="mailto:hello@starcelebrant.com">hello@starcelebrant.com</a><a href="contact.html">Make an Enquiry</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Star Celebrant. All rights reserved.</span><span>Sydney Marriage Celebrant</span></div>
+</footer>
+</body>
+</html>
