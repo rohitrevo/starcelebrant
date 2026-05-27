@@ -111,6 +111,21 @@ nav {
   object-position: center top;
 }
 
+.mc-photo {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.mc-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
 /* PAGE OFFSET */
 main { padding-top: 68px; }
 
